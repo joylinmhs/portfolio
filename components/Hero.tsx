@@ -16,6 +16,11 @@ export default function Hero() {
           software engineering, and building meaningful digital experiences.
         </p>
 
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <button className="rounded-full bg-white px-6 py-3 text-black font-medium transition hover:scale-105">
+            View Projects
+          </button>
+        </div>
       </div>
     </section>
   );
