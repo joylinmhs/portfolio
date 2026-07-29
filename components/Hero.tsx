@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 text-center">
 
         <p className="mb-4 text-lg text-gray-400">
-          Hello 👋
+          Hello,
         </p>
 
         <h1 className="text-5xl font-bold tracking-tight md:text-7xl">
