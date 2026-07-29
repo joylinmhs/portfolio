@@ -12,7 +12,8 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400 md:text-xl">
-          Building technology with purpose.
+          Final-year Computer Science student passionate about AI,
+          software engineering, and building meaningful digital experiences.
         </p>
 
       </div>
