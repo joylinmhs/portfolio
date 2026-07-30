@@ -1,3 +1,4 @@
+"use client";
 export default function Hero() {
   return (
     <section className="min-h-screen bg-black text-white">
