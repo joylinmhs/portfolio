@@ -1,9 +1,14 @@
 "use client";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion"
 export default function Hero() {
   return (
     <section className="min-h-screen bg-black text-white">
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 text-center">
+      <motion.div 
+        className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 text-center"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
 
         <p className="mb-4 text-lg text-gray-400">
           Hello,
@@ -27,7 +32,7 @@ export default function Hero() {
           Download Resume
         </button>
       </div>
-    </div>
+    </motion.div>
   </section>
   );
 }
