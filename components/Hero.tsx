@@ -27,7 +27,6 @@ export default function Hero() {
           <button className="rounded-full bg-white px-6 py-3 text-black font-medium transition hover:scale-105">
             View Projects
           </button>
-
         <button className="rounded-full border border-gray-600 px-6 py-3 text-white transition hover:border-white">
           Download Resume
         </button>
