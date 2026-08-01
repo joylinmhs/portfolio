@@ -26,7 +26,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex flex-row flex-wrap justify-center gap-4">
-          <button className="rounded-full bg-white px-6 py-3 text-black font-medium transition transition-all duration-300 hover:scale-105 hover:shadow-xl">
+          <button className="rounded-full bg-white px-6 py-3 text-black font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl">
             View Projects
           </button>
         <button className="rounded-full border border-gray-600 px-6 py-3 text-white transition hover:border-white">
