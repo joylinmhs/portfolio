@@ -3,10 +3,9 @@ export default function About() {
     <section className="bg-black px-6 py-32 text-white">
       <div className="mx-auto max-w-5xl">
 
-        <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
-          About Me
+        <p className="text-sm uppercase tracking-[0.4em] text-gray-500">
+          ABOUT
         </p>
-
         <h2 className="mt-4 text-4xl font-bold md:text-5xl">
           Building technology with purpose.
         </h2>
