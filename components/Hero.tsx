@@ -1,17 +1,21 @@
 "use client";
-import { motion } from "framer-motion"
+
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black text-white">
+    <section className="relative min-h-[90vh] overflow-hidden bg-black px-6 text-white">
+      {/* Background glow */}
       <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[140px]" />
-      <div className="absolute right-10 bottom-20 h-[300px] w-[300px] rounded-full bg-purple-500/10 blur-[120px]" />
-      <motion.div 
-        className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 text-center"
+
+      <div className="absolute bottom-20 right-10 h-[300px] w-[300px] rounded-full bg-purple-500/10 blur-[120px]" />
+
+      <motion.div
+        className="mx-auto flex min-h-[90vh] max-w-7xl flex-col items-center justify-center text-center"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-
         <p className="mb-4 text-lg text-gray-400">
           Hello,
         </p>
@@ -26,14 +30,15 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex flex-row flex-wrap justify-center gap-4">
-          <button className="rounded-full bg-white px-6 py-3 text-black font-medium transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/10">
+          <button className="rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/10">
             View Projects
           </button>
-        <button className="rounded-full border border-gray-600 px-6 py-3 text-white transition hover:border-white">
-          Download Resume
-        </button>
-      </div>
-    </motion.div>
-  </section>
+
+          <button className="rounded-full border border-gray-600 px-6 py-3 text-white transition hover:border-white">
+            Download Resume
+          </button>
+        </div>
+      </motion.div>
+    </section>
   );
 }
