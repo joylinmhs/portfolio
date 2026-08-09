@@ -2,7 +2,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="bg-black px-6 py-20 text-white">
+    <section id="projects" className="bg-black px-6 py-20 text-white">
       <div className="mx-auto max-w-7xl">
         <p className="text-sm uppercase tracking-[0.4em] text-gray-500">
           Featured Projects
