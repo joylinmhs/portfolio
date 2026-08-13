@@ -13,17 +13,57 @@ export default function Projects() {
         </h2>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">
-          <ProjectCard
-            title="🦻 SoundSense"
-            description="AI-powered hearing screening platform that enables accessible hearing assessment through intelligent audio analysis and a scalable web experience."
-            technologies={[
-              "React",
-              "TypeScript",
-              "Tailwind",
-              "Machine Learning",
-            ]}
-          />
+          {/* Featured SoundSense Card */}
+          <div className="md:col-span-2 rounded-[2rem] border border-gray-800 bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 p-10 shadow-2xl shadow-blue-500/5">
+            <p className="text-sm uppercase tracking-[0.3em] text-blue-400">
+              ⭐ Featured Project
+            </p>
 
+            <h3 className="mt-4 text-4xl font-bold text-white md:text-5xl">
+              🦻 SoundSense
+            </h3>
+
+            <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
+              AI-powered hearing screening platform that enables accessible
+              hearing assessment through intelligent audio analysis, responsive
+              web design, and scalable deployment for real-world usability.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              {[
+                "React",
+                "TypeScript",
+                "Tailwind",
+                "Machine Learning",
+                "Vercel",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-200"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#"
+                className="rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/10"
+              >
+                View Live Demo
+              </a>
+
+              <a
+                href="#"
+                className="rounded-full border border-gray-700 px-6 py-3 text-white transition-colors hover:border-white"
+              >
+                View GitHub
+              </a>
+            </div>
+          </div>
+
+          {/* Other Projects */}
           <ProjectCard
             title="🤖 Multi-Agent AI Research Assistant"
             description="Autonomous AI agents that collaborate to research, summarize, and organize information efficiently."
