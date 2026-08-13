@@ -10,7 +10,7 @@ export default function ProjectCard({
   technologies,
 }: ProjectCardProps) {
   return (
-    <div className="group rounded-3xl border border-gray-800 bg-zinc-950 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10">
+    <div className="group rounded-3xl border border-gray-800 bg-zinc-950/80 backdrop-blur-sm p-8 transition-all duration-300 hover:-translate-y-2 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10">
       <h3 className="text-2xl font-semibold text-white">
         {title}
       </h3>
