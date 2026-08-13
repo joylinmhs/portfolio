@@ -7,7 +7,7 @@ export default function About() {
     <section id="about" className="bg-black px-6 py-20 text-white">
       <motion.div
         className="mx-auto max-w-5xl"
-        initial={{ opacity: 0, y: 40 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8 }}

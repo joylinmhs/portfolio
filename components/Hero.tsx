@@ -12,7 +12,7 @@ export default function Hero() {
 
       <motion.div
         className="mx-auto flex min-h-[90vh] max-w-7xl flex-col items-center justify-center text-center"
-        initial={{ opacity: 0, y: 40 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
