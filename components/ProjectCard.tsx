@@ -3,7 +3,6 @@ type ProjectCardProps = {
   description: string;
   technologies: string[];
 };
-
 export default function ProjectCard({
   title,
   description,
