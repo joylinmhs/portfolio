@@ -5,7 +5,6 @@ export default function Navbar() {
         <h1 className="text-xl font-semibold text-white">
           Joylin
         </h1>
-
         <div className="flex gap-8 text-gray-300">
           <a href="#">About</a>
           <a href="#">Projects</a>
