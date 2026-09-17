@@ -38,7 +38,7 @@ export default function About() {
               I like building things that teach me something new, challenge the way I think,
               and help people work more effectively.
             </p>
-            <p className="mt-6 border-t border-slate-700/80 pt-5 text-base italic leading-8 text-slate-300">
+            <p className="mt-6 text-base italic leading-8 text-slate-300">
               Driven by curiosity, guided by faith, and committed to building technology that serves people.
             </p>
           </div>

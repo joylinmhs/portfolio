@@ -27,13 +27,13 @@ export default function Navbar() {
       <nav
         className={`transition-all duration-300 ${
           isScrolled
-            ? "border-b border-slate-800/80 bg-slate-950/75 shadow-[0_12px_30px_rgba(2,6,23,0.35)] backdrop-blur-xl"
-            : "border-b border-transparent bg-transparent"
+            ? "bg-slate-950/75 shadow-[0_12px_30px_rgba(2,6,23,0.35)] backdrop-blur-xl"
+            : "bg-transparent"
         }`}
         aria-label="Main navigation"
       >
         <div className="section-shell flex items-center justify-between py-4">
-          <a href="#home" className="flex items-center gap-2 text-sm font-semibold tracking-[0.28em] text-slate-100 uppercase transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/80 rounded-full">
+          <a href="#home" className="flex items-center gap-2 rounded-full border border-slate-700/50 bg-slate-900/40 px-3 py-2 text-sm font-semibold tracking-[0.28em] text-slate-100 uppercase shadow-[0_0_24px_rgba(59,130,246,0.2)] transition-all hover:border-sky-400/50 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/80">
             Joylin
           </a>
 
@@ -42,7 +42,7 @@ export default function Navbar() {
               <a
                 key={item.href}
                 href={item.href}
-                className="relative transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/80 rounded-full px-2 py-1"
+                className="relative rounded-full px-2 py-1.5 transition-all duration-200 hover:text-white hover:bg-slate-800/60 hover:shadow-[0_0_20px_rgba(96,165,250,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/80"
               >
                 {item.label}
               </a>

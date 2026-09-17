@@ -49,10 +49,11 @@ export default function ProjectCard({
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       whileHover={{ y: -6 }}
-      className={`group relative overflow-hidden rounded-[2rem] border bg-slate-950/80 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.42)] md:p-7 ${accentMap[accent].border}`}
+      className={`group relative overflow-hidden rounded-[2rem] border bg-slate-950/80 p-6 shadow-[0_24px_80px_rgba(2,6,23,0.52)] md:p-7 ${accentMap[accent].border}`}
     >
       <div className={`absolute inset-0 bg-gradient-to-br ${accentMap[accent].glow}`} />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-200/70 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-200/80 to-transparent" />
+      <div className="absolute inset-0 rounded-[2rem]" />
 
       <div className="relative z-10">
         {badge && (

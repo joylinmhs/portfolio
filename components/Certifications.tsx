@@ -10,7 +10,7 @@ const certs = [
 
 export default function Certifications() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-24 md:py-32">
       <div className="section-shell">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

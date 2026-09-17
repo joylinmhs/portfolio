@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-800/80 py-8">
+    <footer className="py-10">
       <div className="section-shell flex flex-col gap-5 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="text-base font-medium text-slate-200">Joylin Mathias</p>
