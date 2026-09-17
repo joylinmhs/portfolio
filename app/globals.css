@@ -26,9 +26,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 20% 10%, rgba(59, 130, 246, 0.14), transparent 28%),
-    radial-gradient(circle at 78% 18%, rgba(168, 85, 247, 0.12), transparent 30%),
-    radial-gradient(circle at 50% 50%, rgba(14, 116, 144, 0.12), transparent 42%),
+    radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.22), transparent 26%),
+    radial-gradient(circle at 78% 18%, rgba(168, 85, 247, 0.18), transparent 30%),
+    radial-gradient(circle at 52% 50%, rgba(59, 130, 246, 0.12), transparent 34%),
+    radial-gradient(circle at 50% 110%, rgba(15, 23, 42, 0.25), transparent 38%),
     #020617;
   color: var(--foreground);
   font-family: "Segoe UI", "SF Pro Display", Arial, sans-serif;
@@ -42,20 +43,21 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: radial-gradient(circle at center, black 42%, transparent 100%);
+    linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 30px 30px;
+  mask-image: radial-gradient(circle at center, black 45%, transparent 100%);
+  opacity: 0.7;
   animation: gridDrift 20s ease-in-out infinite alternate;
 }
 
 body::after {
   content: "";
   position: fixed;
-  inset: -20%;
+  inset: -18%;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 35%, rgba(96, 165, 250, 0.12), transparent 25%);
-  filter: blur(18px);
+  background: radial-gradient(circle at 50% 35%, rgba(96, 165, 250, 0.18), transparent 24%);
+  filter: blur(20px);
   animation: glowPulse 14s ease-in-out infinite alternate;
 }
 
