@@ -4,41 +4,66 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] overflow-hidden bg-black px-6 text-white">
-      {/* Background glow */}
-      <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[140px]" />
+    <section id="home" className="relative overflow-hidden pt-10 pb-20 md:pb-28">
+      <div className="absolute inset-x-0 top-0 h-[32rem] bg-[radial-gradient(circle_at_center,rgba(96,165,250,0.18),transparent_55%)]" />
+      <div className="absolute right-12 top-20 h-60 w-60 rounded-full bg-violet-500/10 blur-[120px]" />
+      <div className="absolute left-8 top-40 h-56 w-56 rounded-full bg-sky-500/10 blur-[120px]" />
 
-      <div className="absolute bottom-20 right-10 h-[300px] w-[300px] rounded-full bg-purple-500/10 blur-[120px]" />
+      <div className="section-shell relative mx-auto grid min-h-[78vh] items-center gap-10 lg:grid-cols-[1.3fr_0.7fr]">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="max-w-3xl"
+        >
+          <p className="mb-6 text-sm font-medium uppercase tracking-[0.28em] text-sky-300/80">
+            Hello, I&apos;m Joylin Mathias
+          </p>
 
-      <motion.div
-        className="mx-auto flex min-h-[90vh] max-w-7xl flex-col items-center justify-center text-center"
-        initial={false}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <p className="mb-4 text-lg text-gray-400">
-          Hello,
-        </p>
+          <h1 className="text-4xl font-semibold tracking-[-0.06em] text-white md:text-6xl lg:text-7xl">
+            Building thoughtful software at the intersection of AI, engineering, and real-world problems.
+          </h1>
 
-        <h1 className="text-5xl font-bold tracking-tight md:text-7xl">
-          I'm Joylin Mathias
-        </h1>
+          <p className="mt-6 max-w-xl text-base leading-8 text-slate-300 md:text-lg">
+            I&apos;m a Computer Science student interested in AI, modern web development,
+            and building technology that solves meaningful problems with clarity and care.
+          </p>
 
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400 md:text-xl">
-          Final-year Computer Science student passionate about AI,
-          software engineering, and building meaningful digital experiences.
-        </p>
+          <div className="mt-9 flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="rounded-full bg-slate-100 px-5 py-3 text-sm font-medium text-slate-950 transition-transform duration-200 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/80"
+            >
+              View Projects
+            </a>
+            <a
+              href="/resume/resume.pdf"
+              className="rounded-full border border-slate-700 bg-slate-900/50 px-5 py-3 text-sm font-medium text-slate-100 transition-colors duration-200 hover:border-slate-500 hover:bg-slate-800/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/80"
+            >
+              Download Resume
+            </a>
+          </div>
+        </motion.div>
 
-        <div className="mt-10 flex flex-row flex-wrap justify-center gap-4">
-          <button className="rounded-full bg-white px-6 py-3 font-medium text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/10">
-            View Projects
-          </button>
-
-          <button className="rounded-full border border-gray-600 px-6 py-3 text-white transition hover:border-white">
-            Download Resume
-          </button>
-        </div>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 24, rotateX: 8 }}
+          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex justify-center lg:justify-end"
+        >
+          <div className="relative w-full max-w-md">
+            <div className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-sky-400/20 via-violet-500/10 to-transparent blur-2xl" />
+            <div className="panel-surface relative overflow-hidden rounded-[2rem] p-3 shadow-[0_24px_80px_rgba(15,23,42,0.75)]">
+              <div className="flex h-[420px] items-center justify-center rounded-[1.5rem] border border-slate-700 bg-[radial-gradient(circle_at_top,#1e293b_0%,#0f172a_42%,#020617_100%)] text-center text-slate-400">
+                <div className="space-y-3 px-10">
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-slate-600 text-lg text-slate-200">JP</div>
+                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Add profile photo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }
