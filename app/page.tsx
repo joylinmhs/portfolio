@@ -17,19 +17,19 @@ export default function Home() {
     <main className="relative overflow-x-hidden">
       <div className="pointer-events-none fixed inset-0 z-0 opacity-100 mix-blend-screen">
         <CursorGrid
-          cellSize={64}
-          color="#8ec5ff"
-          radius={260}
+          cellSize={70}
+          color="#D946EF"
+          radius={140}
           falloff="smooth"
-          holdTime={680}
-          fadeDuration={900}
-          lineWidth={1.5}
-          maxOpacity={1.8}
-          fillOpacity={0.14}
-          gridOpacity={0.22}
-          cellRadius={4}
-          clickPulse={false}
-          pulseSpeed={240}
+          holdTime={400}
+          fadeDuration={800}
+          lineWidth={1.2}
+          maxOpacity={1}
+          fillOpacity={0}
+          gridOpacity={0}
+          cellRadius={0}
+          clickPulse={true}
+          pulseSpeed={600}
           className=""
         />
       </div>
