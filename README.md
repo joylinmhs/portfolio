@@ -1,2 +1,1 @@
-My Portfolio website
-Currently under development
+Under development
